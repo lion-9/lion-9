@@ -4,7 +4,7 @@ const fs = require("fs");
 const prefix = "#";
 const adminprefix = "#";
 client.on('message', message => { if (message.cclient.on('message', message => {
-    if (message.content.startsWith(prefix + "p")) {
+    if (message.content.startsWith(prefix + "ph")) {
         var mentionned = message.mentions.users.first();
     var Taino;
       if(mentionned){
