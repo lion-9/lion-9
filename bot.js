@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const fs = require("fs");
 const prefix = "#";
 const adminprefix = "#";
-client.on('message', message => { if (message.content.startsWith(prefix + "avatar")) { var mentionned = message.mentions.users.first(); var Taino; if(mentionned){ var Taino = mentionned; } else { var Taino = message.author; } const embed = new Discord.RichEmbed() .setColor("RANDOM") .setImage(`${Taino.avatarURL}`) message.channel.sendEmbed(embed); }});
+client.on('message', message => { if (message.content.startsWith(prefix + "P")) { var mentionned = message.mentions.users.first(); var Taino; if(mentionned){ var Taino = mentionned; } else { var Taino = message.author; } const embed = new Discord.RichEmbed() .setColor("RANDOM") .setImage(`${Taino.avatarURL}`) message.channel.sendEmbed(embed); }});
  const devs = ['' , '496824761305792532' , ''];
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
