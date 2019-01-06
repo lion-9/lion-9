@@ -6,7 +6,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-       if (message.content.startsWith(prefix + "ava")) {
+       if (message.content.startsWith(prefix + "p")) {
            var mentionned = message.mentions.users.first();
     var Taino;
       if(mentionned){
